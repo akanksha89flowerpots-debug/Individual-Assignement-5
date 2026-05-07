@@ -1,0 +1,25 @@
+StringVar() is a special variable class that links a python variable to a Tkinter widget 
+(like entry or label). It automatically updates the widget when the variable changes 
+and vise versa. 
+2. The grid() layout arranges widgets in table-like structures of rows and columns 
+making it easier to align the buttons neatly. 
+3. When a button is clicked it is associated with the function command. Clicking the 
+button calls btn_click(#) which updates the stringVar() to reflect the number or 
+operator. 
+4. Errors such as division by zero or invalid expressions are handles using a try-except 
+block in btn_equal(). A way to improve the code would be more descriptive 
+messages like “cannot divide by zero” or prevent invalid input by restricting certain 
+input by users that can result in an error.
+5. Some improvements include aligning buttons uniformly with equal size and 
+padding. You can also highlight the equals or clear button with a different color and 
+add a backspace button to correct mistakes without clearing everything. 
+6. Pack() arranges widgets in a single row or column which is not ideal for a multi-row 
+layout. Place() uses positioning which makes it restrictive and harder to resize. Grid() 
+is best for this application because it suits table-like layouts and aligns buttons 
+consistently. It also adjusts the size automatically if the window is resized. 
+7.
+• btn_click(item)→ Adds the clicked button’s value to the current expression and 
+updates the display.
+• btn_clear()→ clears the current input and resets the display
+• btn_equal()→ Evaluates the current expression, updates the display with the 
+result or shows an error message if invalid. 
